@@ -46,7 +46,7 @@ class Background extends StatelessWidget {
     final screnSize = MediaQuery.of(context).size;
     return Container(
       width: double.infinity,
-      height: screnSize.height * 0.65,
+      height: screnSize.height * 0.80,
       decoration: const BoxDecoration(
           borderRadius: BorderRadius.only(bottomLeft: Radius.circular(60)),
           gradient: LinearGradient(
@@ -240,8 +240,8 @@ class ImagenDiscoDuracion extends StatelessWidget {
     return Padding(
       padding: EdgeInsets.only(
         top: mq.size.height * 0.10,
-        right: mq.size.width * 0.15,
-        left: mq.size.width * 0.15,
+        right: mq.size.width * 0.10,
+        left: mq.size.width * 0.10,
       ),
       child: Row(
         mainAxisAlignment: MainAxisAlignment.spaceBetween,
