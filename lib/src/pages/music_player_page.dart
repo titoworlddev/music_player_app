@@ -24,6 +24,7 @@ class _MusicPlayerPageState extends State<MusicPlayerPage> {
         children: [
           const Background(),
           Column(
+            crossAxisAlignment: CrossAxisAlignment.center,
             children: const [
               CustomAppbar(),
               ImagenDiscoDuracion(),
@@ -45,7 +46,7 @@ class Background extends StatelessWidget {
     final screnSize = MediaQuery.of(context).size;
     return Container(
       width: double.infinity,
-      height: screnSize.height * 0.8,
+      height: screnSize.height * 0.65,
       decoration: const BoxDecoration(
           borderRadius: BorderRadius.only(bottomLeft: Radius.circular(60)),
           gradient: LinearGradient(
@@ -76,7 +77,9 @@ class Lyrics extends StatelessWidget {
             .map((linea) => Text(
                   linea,
                   style: TextStyle(
-                      fontSize: 20, color: Colors.white.withOpacity(0.6)),
+                    fontSize: 20,
+                    color: Colors.white.withOpacity(0.6),
+                  ),
                 ))
             .toList(),
       ),
@@ -232,19 +235,19 @@ class ImagenDiscoDuracion extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Container(
-      padding: const EdgeInsets.symmetric(horizontal: 16),
-      margin: const EdgeInsets.only(top: 70),
+    final mq = MediaQuery.of(context);
+
+    return Padding(
+      padding: EdgeInsets.only(
+        top: mq.size.height * 0.10,
+        right: mq.size.width * 0.15,
+        left: mq.size.width * 0.15,
+      ),
       child: Row(
+        mainAxisAlignment: MainAxisAlignment.spaceBetween,
         children: const [
           ImagenDisco(),
-          SizedBox(
-            width: 20,
-          ),
           BarraProgreso(),
-          SizedBox(
-            width: 20,
-          ),
         ],
       ),
     );
