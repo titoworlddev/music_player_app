@@ -9,7 +9,5 @@ To achieve this, it makes use of the following packages:
 - Provider
 - Assets audio player
 
-<div style="display:flex; flex-wrap: wrap; gap:16px">
-  <img height="150" src="screenshot1.jpg">
-  <img width="65%" src="screenshot2.jpg">
-</div>
+<img src="screenshot1.jpg">
+<img width="70%" src="screenshot2.jpg">
