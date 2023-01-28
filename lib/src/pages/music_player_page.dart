@@ -46,7 +46,7 @@ class Background extends StatelessWidget {
     final screnSize = MediaQuery.of(context).size;
     return Container(
       width: double.infinity,
-      height: screnSize.height * 0.80,
+      height: screnSize.height * 0.70,
       decoration: const BoxDecoration(
           borderRadius: BorderRadius.only(bottomLeft: Radius.circular(60)),
           gradient: LinearGradient(
