@@ -1,16 +1,15 @@
-# music_player_app
+# Music player app
 
-A new Flutter project.
+This is a music player app that plays music from the local storage.
+It is also a fully responsive design.
 
-## Getting Started
+To achieve this, it makes use of the following packages:
 
-This project is a starting point for a Flutter application.
+- Animations
+- Provider
+- Assets audio player
 
-A few resources to get you started if this is your first Flutter project:
-
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
-
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+<div style="display:flex; flex-wrap: wrap; gap:16px">
+  <img height="150" src="screenshot1.jpg">
+  <img width="65%" src="screenshot2.jpg">
+</div>
