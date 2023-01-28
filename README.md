@@ -9,5 +9,5 @@ To achieve this, it makes use of the following packages:
 - Provider
 - Assets audio player
 
-<img src="screenshot1.jpg">
-<img width="70%" src="screenshot2.jpg">
+<img height="200" src="screenshot1.jpg">
+<img src="screenshot2.jpg">
